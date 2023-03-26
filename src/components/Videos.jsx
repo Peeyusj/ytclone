@@ -1,0 +1,131 @@
+import React, { useState } from "react";
+import '../styles/video.css'
+import Videocard from "./Videocard";
+const Videos = () => {
+  let ytdata = [
+    {
+      id: 1,
+      thumbnail:
+        "https://i.ytimg.com/vi/zT9yQTquPwo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEsaJEaV8kp5YJPfbtTLkhEon4dQ",
+      title: "something ho gaya ",
+      channelName: "Saurabh Joshi",
+      views: "1m",
+    },
+    {
+      id: 2,
+      thumbnail:
+        "https://i.ytimg.com/vi/BdS1LzvoRPA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLApNU6EI2yH5EjylyPeObcq7aGPtQ",
+      title: "Bhuvan bam in kpss ",
+      channelName: "Sony India",
+      views: "3.2m",
+    },
+    {
+      id: 3,
+      thumbnail:
+        "https://i.ytimg.com/vi/dldjCPa9ZW4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAO3SamCWoDsD9nk0Iq0LKFH7KtUQ",
+      title: "react tut1 ",
+      channelName: "pedrotech",
+      views: "1m",
+    },
+    {
+      id: 4,
+      thumbnail:
+        "https://i.ytimg.com/vi/U1KGRnWjllg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA57L_HHgKkiuOyLNO2bj5zH_MRaA",
+      title: "best of sheldon ",
+      channelName: "TBBT",
+      views: "2.9m",
+    },
+    {
+      id: 5,
+      thumbnail:
+        "https://i.ytimg.com/vi/juKev44fRiw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDxHuPLkiDUiJENLwXYkdUrFHaAlA",
+      title: "kapil Sharma ",
+      channelName: "sandeep mahesvari",
+      views: "2m",
+    },
+    {
+      id: 6,
+      thumbnail:
+        "https://i.ytimg.com/vi/yGnxbwfDFr4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYEdyuS9ZMIDrkvm3z2BE7JVOlpQ",
+      title: "india about netflix ",
+      channelName: "Netflix",
+      views: "1.6m",
+    },
+    {
+      id: 7,
+      thumbnail:
+        "https://i.ytimg.com/vi/vMXJuw1vNa8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCTFJ7p2ZblfghsGTd-Rp8r26Vq2Q",
+      title: "something ho gaya dobara ",
+      channelName: "Saurabh Joshi",
+      views: "4.6m",
+    },
+    {
+      id: 8,
+      thumbnail:
+        "https://i.ytimg.com/vi/snyXx2hipYY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAio7io_H7Oj5nOmAawOlT8K1C35A",
+      title: "bollywood comedy ",
+      channelName: "T-series",
+      views: "8.6m",
+    },
+    {
+      id: 9,
+      thumbnail:
+        "https://i.ytimg.com/vi/sVbWxq-aIMo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBQDvcLiKseeezwGonmmHgzJYwc1g",
+      title: " title1",
+      channelName: "harmindr",
+      views: "3.3m",
+    },
+    {
+      id: 10,
+      thumbnail:
+        "https://i.ytimg.com/vi/Qm_wAPG5S-g/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDp_dIKy3UdL4g899uwXQBgO43Kmg",
+      title: "comedy",
+      channelName: "comedy central",
+      views: "2.8m",
+    },
+    {
+      id: 11,
+      thumbnail:
+        "https://i.ytimg.com/vi/BQ2o2UtOce4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB9OirWI8-NF_GwTgB34yfsmNgDkQ",
+      title: "Alvida",
+      channelName: "YRF",
+      views: "12.2m",
+    },
+    {
+      id: 12,
+      thumbnail:
+        "https://i.ytimg.com/vi/hp_-RlwNg04/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCy3js89qpu1AmJWqspJJAJMb9e-Q",
+      title: "comedy",
+      channelName: "T-series",
+      views: "68m",
+    },
+  ];
+  const [videodata, setVideoData] = useState(ytdata);
+  let dislike = (id) => {
+    setVideoData(videodata.filter((item) => item.id !== id));
+  };
+
+  return (
+    <div>
+      <div
+        className="ytv"
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifCcontent: "center",
+          marginLeft: "274px",
+          position: "absolute",
+          top: "112px",
+          zIndex: "-20",
+        }}
+      >
+       <Videocard videodata={videodata} dislike={dislike}/>
+      {<Videocard videodata={videodata.filter((data)=>((parseInt(data.views)))>=2)} dislike={dislike}/>}
+
+
+      </div>
+    </div>
+  );
+};
+
+export default Videos;

@@ -1,0 +1,21 @@
+.categories li{
+    display: inline-block;
+    list-style-type: none;
+}
+.anc{
+    text-decoration: none;
+    margin: 0px 15px;
+    color: black;
+    border-radius: 12px;
+    padding: 3px 6px;
+    background-color:#60606062;
+}
+.categories a:hover{
+    background-color:#6060608b;
+    cursor: pointer;
+}
+.categories a:focus{
+    color: white;
+    border-radius: 12px;
+    background-color: black
+}

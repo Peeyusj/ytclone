@@ -1,0 +1,37 @@
+.navbar1{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+   
+    
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: white;
+}
+.logo{
+    display: flex;
+}
+.searchbar input{
+    width: 550px;
+    height: 2.3em;
+    border:1px solid rgba(0, 0, 0, 0.743);
+    border-radius: 20px;
+    font-size: 16px;
+    padding-left: 9px;
+
+}
+.searchbar input:focus{
+  outline: 1px solid rgb(41, 41, 145);
+ 
+}
+
+.profile{
+    display: flex;
+    margin-right:4px ;
+    
+}

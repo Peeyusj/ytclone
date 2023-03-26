@@ -1,0 +1,40 @@
+
+{
+    "emplyee":[
+        {
+           "id":1,
+           "name":"ram",
+           "age":20,
+           "designation":"GET",
+           "Sal":30000
+        },
+        {
+            "id":2,
+            "name":"sham",
+            "age":44,
+            "designation":"JE",
+            "Sal":50000
+         },
+         {
+            "id":3,
+            "name":"dham",
+            "age":34,
+            "designation":"DGM",
+            "Sal":100000
+         },
+         {
+            "id":4,
+            "name":"naam",
+            "age":30,
+            "designation":"AM",
+            "Sal":80000
+         },
+         {
+            "id":5,
+            "name":"bam",
+            "age":30,
+            "designation":"AE",
+            "Sal":60000
+         }
+    ]
+}
