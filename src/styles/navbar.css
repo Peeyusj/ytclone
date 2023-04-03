@@ -12,6 +12,8 @@
     position: fixed;
     width: 100%;
     background: white;
+    z-index: 3;
+    top: 0px;
 }
 .logo{
     display: flex;
@@ -35,3 +37,19 @@
     margin-right:4px ;
     
 }
+
+
+.vidlink{
+    text-decoration:none;
+    color:black;
+    height:24px;
+    background-color:#80808033;
+    width:120px;
+    padding:5px;
+    border-radius:9px;  
+    margin: 0 5px;
+}
+.active{
+    background-color:#808080d6;
+    
+} 

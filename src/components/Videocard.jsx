@@ -25,12 +25,12 @@ const Videocard = (props) => {
             <div className="channelname">{data.channelName}</div>
             <div className="views">
               {data.views}
-              <button
-                style={{ marginLeft: "180px" }}
+              <a
+                style={{ marginLeft:"140px",cursor:"pointer" }}
                 onClick={() => props.dislike(data.id)}
               >
-                dislike
-              </button>
+                Not Intrested
+              </a>
             </div>
           </div>
         ))}

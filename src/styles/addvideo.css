@@ -1,0 +1,59 @@
+.vidouter{
+    text-align: center;
+   
+}
+
+.vidouter h1{
+    position: relative;
+    top: 70px;
+    margin: 1px auto;
+}
+.formouter{
+    position: absolute;
+    top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 300px;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(245, 222, 179, 0.541);    
+    box-shadow: -3px -3px 6px rgba(245, 222, 179, 0.431); 
+    font-size: 12px;
+    color: black;
+}
+.forms{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input input{
+    width: 80%;
+    height: 28px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.023);
+    border-bottom: 1px solid rgba(220, 220, 220, 0.882);
+    margin: 10px 2px;
+
+} 
+.forms button{
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+}
+.input{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bgimg img{
+box-shadow: 3px -1px 4px black;
+}
